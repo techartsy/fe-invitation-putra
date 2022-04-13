@@ -4,9 +4,10 @@ import { getAllGuest } from "../store/actions";
 
 const Homepage = () => {
   const dispatch = useDispatch();
-
+  // reasign tab bar title
+  document.title = "cobaa ya";
   useEffect(() => {
-    // dispatch(getAllGuest());
+    dispatch(getAllGuest());
   }, []);
 
   return <div>Home Page</div>;
